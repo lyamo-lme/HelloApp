@@ -1,0 +1,21 @@
+@model UserView
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Hello</title>
+</head>
+<body>
+<div>
+    <form asp-controller="Home" asp-action="HelloUser">
+        <input asp-for="Name"/>
+        <button type="submit" >Send</button>
+    </form>
+</div>
+</body>
+</html>
